@@ -175,7 +175,7 @@ const Header = () => {
               </div>
 
               <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded duration-300 mt-3">
-                {t("title")}
+              {t("header.button")}
               </button>
             </nav>
           </div>
