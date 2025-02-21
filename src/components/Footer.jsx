@@ -19,13 +19,13 @@ const Footer = () => {
                         <p className="mb-2">
                             Email:{" "}
                             <a
-                                href="mailto:example@mail.com"
+                                href="mailto:karpage@gmail.com"
                                 className="hover:underline"
                             >
-                                example@mail.com
+                                karpage@gmail.com
                             </a>
                         </p>
-                        <p className="mb-2">{t("footer.first.phone")} +998 00 123 45 67</p>
+                        <p className="mb-2">{t("footer.first.phone")} +998 93 173 84 27</p>
                         <p className="mb-2">{t("footer.first.place")}</p>
                     </div>
 

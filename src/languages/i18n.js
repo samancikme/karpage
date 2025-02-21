@@ -366,9 +366,9 @@ const resources = {
       },
       footer: {
         first: {
-          des1: "'Kar Page' negizgi maqseti – elimiz adamlarına sapalı bilim hám tiykar emek wáqıtın tiyarlı uyıymlastırıw.",
+          des1: "'Kar Page' negizgi maqseti – elimiz adamlarına sapalı bilim hám tiykar etmek wáqıtın tiyimli uyıymlastırıw.",
           phone: "Telefon",
-          place: "Meken-jay: No'kis qalası, Beruniy kóshesi",
+          place: "Manzil: No'kis qalası, Beruniy kóshesi",
         },
         navs: {
           main: "Bas bet",
@@ -379,8 +379,8 @@ const resources = {
           maeket: "Online Dükán",
         },
         second: {
-          sourses: "ÁLEUMETLIK JELILERGE TIRKELIW",
-          des: "Sońǵı jańalıqlardan hám habarlandırıwlardan habarlanıw ushın áleumetlik jelilerde biz menen bolıń!",
+          sourses: "SOCIAL TARMAQGA TIRKELIW",
+          des: "Sońǵı jańalıqlardan hám habarlandırıwlardan habarlanıw ushın social tarmaqlarda biz menen bolıń!",
         },
       },
       form: {
