@@ -78,7 +78,7 @@ const resources = {
           title: "",
           des1: "«Kar Page» NTM tashkil etishdan asosiy maqsad yurtimiz fuqarolarining bo‘sh vaqtlarini mazmunli tashkil etish va sifatli ta’limni yo‘lga qo‘yishdan iborat.",
           phone: "Telefon",
-          place: "Manzil: Nukus shahri, Bayniy ko‘chasi",
+          place: "Manzil: Nukus shahri, Beruniy ko‘chasi",
         },
         navs: {
           main: "Asosiy",
