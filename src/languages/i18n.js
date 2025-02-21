@@ -311,23 +311,23 @@ const resources = {
           news: "JAŃALIQLAR",
           courses: "KURSILAR",
           media: "MEDIA",
-          location: "MEKEN-JAYLAR",
+          location: "ORINLAR",
         },
         button: "QA’BIL ETİW",
       },
       main: {
-        title: "Arquitekturá hám İshki Dizayn Kursi",
+        title: "Arxitekturá hám İshki Dizayn Kursi",
         cards: {
           card_1: {
-            title: "Arquitekturá hám İshki Dizayn Kursi",
+            title: "Arxitekturá hám İshki Dizayn Kursi",
             description:
-              "Arquitekturá hám ishki dizayn boyınsha kurslar bizdiń bıligli oqıtıwshılarımız tárepinen ótkiziledi hám ár biri 3 ay dawam etedi.",
+              "Arxitekturá hám ishki dizayn boyınsha kurslar bizdiń bıligli oqıtıwshılarımız tárepinen ótkiziledi hám ár biri 3 ay dawam etedi.",
             button: "Tolıǵıraq",
           },
           card_2: {
             title: "3ds Max hám AutoCAD",
             description:
-              "Bul kurs 3ds Max hám AutoCAD-dı úyreniwdi basqısh-basqısh jürgizedi. Tásirlik práctika hám layihalardı orınlaw sizge shınayı tájiriybe beredi.",
+              "Bul kurs 3ds Max hám AutoCAD-dı úyreniwdi basqısh-basqısh jurgizedi. Tásirlik práctika hám layihalardı orınlaw sizge shınayı tájiriybe beredi.",
             button: "Tolıǵıraq",
           },
         },
@@ -343,17 +343,17 @@ const resources = {
           phone: "Telefon",
         },
         course2: {
-          name: "ARQUITEKTURÁ HÁM İSHKI DIZAYN KURSI",
-          des1: "Kurs Haqqında",
-          p1: "'Karpageda' da arquitekturá, ishki dizayn, AutoCAD hám 3ds MAX boyınsha kurslar belsendi ótkiziledi.",
+          name: "ARXITEKTURÁ HÁM İSHKI DIZAYN KURSI",
+          des1: "Kurs haqqında",
+          p1: "'Karpageda' da arxitekturá, ishki dizayn, AutoCAD hám 3ds MAX boyınsha kurslar belsendi ótkiziledi.",
           p2: "Bul kurslar eng kóp talap etiletin mamandıqlardı úyreniw ushın rawajlandırılǵan hám oqıwshılar ushın bilim hám tájiriybe beredi.",
-          place: "Bizdiń meken-jayımız: No'kis qalası, Beruniy kóshesi.",
+          place: "Bizdiń orinlarimiz: No'kis qalası, Beruniy kóshesi.",
           phone: "Telefon",
         },
       },
       contact: {
-        more: "Kópshe málimat:",
-        time: "Uzaqlığı:",
+        more: "Qosımsha málimat:",
+        time: "Dáwámiylıgı:",
         score: "Dárejesi:",
         numbers: "Qatnasıwshılar sanı:",
         button: "KURSQA JAZILIW",
@@ -363,7 +363,7 @@ const resources = {
         first: {
           des1: "'Kar Page' negizgi maqseti – elimiz adamlarına sapalı bilim hám tiykar emek wáqıtın tiyarlı uyıymlastırıw.",
           phone: "Telefon",
-          place: "Meken-jay: No'kis qalası, Bayniy kóshesi",
+          place: "Manzil: No'kis qalası, Beruniy kóshesi",
         },
         navs: {
           main: "Bas bet",
