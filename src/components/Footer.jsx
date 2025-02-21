@@ -1,3 +1,6 @@
+import { BsTelegram } from "react-icons/bs"; 
+import { BsFacebook } from "react-icons/bs"; 
+import { AiOutlineInstagram } from "react-icons/ai"; 
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -73,21 +76,21 @@ const Footer = () => {
                                 className="w-8 h-8 bg-white text-[#0f3061] flex items-center justify-center rounded-full hover:bg-gray-200"
                                 title="Facebook"
                             >
-                                F
+                                <BsFacebook />
                             </a>
                             <a
                                 href="#"
                                 className="w-8 h-8 bg-white text-[#0f3061] flex items-center justify-center rounded-full hover:bg-gray-200"
                                 title="Instagram"
                             >
-                                I
+                                <AiOutlineInstagram />
                             </a>
                             <a
                                 href="#"
                                 className="w-8 h-8 bg-white text-[#0f3061] flex items-center justify-center rounded-full hover:bg-gray-200"
                                 title="Telegram"
                             >
-                                T
+                                <BsTelegram />
                             </a>
                         </div>
                     </div>
