@@ -311,7 +311,7 @@ const resources = {
           news: "JAŃALIQLAR",
           courses: "KURSILAR",
           media: "MEDIA",
-          location: "MEKEN-JAYLAR",
+          location: "MANZIL",
         },
         button: "QA’BIL ETİW",
       },
