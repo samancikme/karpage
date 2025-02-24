@@ -3,12 +3,12 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import MainLayout from './layout/MainLayout'
 import Main from './pages/Main'
 import Course1 from './pages/Course1'
-import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Course2 from './pages/Course2'
 import Form from './components/Form'
 
 const App = () => {
+  console.log(`Developer : ${"https://t.me/samancik_me"}`)
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
@@ -17,7 +17,6 @@ const App = () => {
           <Route path='/courses1' element={<Course1 />} />
           <Route path='/courses2' element={<Course2 />} />
           <Route path='/contact' element={<Form />} />
-          <Route path='/about' element={<About />} />
           <Route path='/*' element={<NotFound />} />
         </Route>
       </>

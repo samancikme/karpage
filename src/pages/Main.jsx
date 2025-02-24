@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 
 const CoursesSection = () => {
 
-  const { lang } = useSelector(state => state.page)
   const { t, i18n } = useTranslation()
   return (
     <section>

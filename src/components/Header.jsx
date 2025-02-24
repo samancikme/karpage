@@ -9,7 +9,6 @@ import "../languages/i18n"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const dispatch = useDispatch()
   const { t, i18n } = useTranslation();
   // Sayt yuklanganda oldingi tilni o‘rnatish
   useEffect(() => {
