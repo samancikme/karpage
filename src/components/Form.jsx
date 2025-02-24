@@ -3,36 +3,29 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export default function Form() {
-    const [formData, setFormData] = useState({
-        ism: "",
-        familya: "",
-        telefon: "",
-        email: "",
-    });
-
     const [loading, setLoading] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-
-        const response = await fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const url = "https://script.google.com/macros/s/AKfycbxzrqfraHfi03VnXkbv78Y1X1eE1nUfDQVSFeG2_IFvj8zi37ti_qXlXOtSYKvbuP2S_Q/exec"
+        setLoading(true)
+        fetch(url, {
             method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-        });
-
-        setLoading(false);
-        if (response) {
-            alert("Ma'lumotlar muvaffaqiyatli jo'natildi!");
-            setFormData({ ism: "", familya: "", telefon: "", email: "" });
-        }
-    };
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: (`Name=${e.target.name.value}&Email=${e.target.email.value}&Phone=${e.target.phone.value}`)
+        }).then(res => res.text()).then(data => {
+            alert(t('form.success'))
+            setLoading(false)
+            e.target.name.value = ""
+            e.target.email.value = ""
+            e.target.phone.value = ""
+        }).catch(error => {
+            alert(t('form.error'))
+            setLoading(false)
+            e.target.name.value = ""
+            e.target.email.value = ""
+            e.target.phone.value = ""
+            console.log(error)})
+    }
     const { t, i18n } = useTranslation();
 
 
@@ -46,31 +39,26 @@ export default function Form() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="text"
-                        name="ism"
+                        name="name"
                         placeholder={t('form.name')}
-                        value={formData.ism}
-                        onChange={handleChange}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
                         required />
+
                     <input
                         type="tel"
-                        name="telefon"
+                        name="phone"
                         placeholder={t('form.phone')}
-                        value={formData.telefon}
-                        onChange={handleChange}
+                        pattern="[+]{0,1}[0-9]{9,15}"
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        required
                     />
                     <input
                         type="email"
                         name="email"
                         placeholder={t('form.email')}
-                        value={formData.email}
-                        onChange={handleChange}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
                         required
                     />
-                    <div className="flex justify-end"> 
+                    <div className="flex justify-end">
                         <motion.button
                             type="submit"
                             className="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition disabled:bg-gray-400"
