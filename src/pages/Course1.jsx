@@ -53,7 +53,7 @@ const Course1 = () => {
                 </div>
 
                 <div className="">
-                  <strong>Telegram</strong>
+                  <strong>Telegram: </strong>
                   <a href="https://t.me/QMU_Qurilis_bot">QMU_Qurilis_bot</a>
                 </div>
 

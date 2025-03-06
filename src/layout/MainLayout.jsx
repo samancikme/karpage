@@ -2,13 +2,16 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import AnimatedRoutes from '../components/AnimatedRoutes'
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   return (
     <div>
-      <Header/>
-      <Outlet/>
-      <Footer/>
+      <Header />
+      <AnimatedRoutes>
+        <Outlet />
+      </AnimatedRoutes>
+      <Footer />
     </div>
   )
 }

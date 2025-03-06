@@ -24,7 +24,8 @@ export default function Form() {
             e.target.name.value = ""
             e.target.email.value = ""
             e.target.phone.value = ""
-            console.log(error)})
+            console.log(error)
+        })
     }
     const { t, i18n } = useTranslation();
 
@@ -32,9 +33,9 @@ export default function Form() {
     return (
         <div className="flex items-start justify-center bg-gradient-to-r p-20 h-max">
             <motion.div
-                initial={{ opacity: 0, y: -50 }}
+                initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.3 }}
                 className="bg-white p-8 rounded-lg shadow-lg w-full min-w-[350px] max-w-[1000px]">
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input

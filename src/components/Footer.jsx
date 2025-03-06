@@ -3,12 +3,13 @@ import { BsFacebook } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai"; 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
       const { t, i18n } = useTranslation();
     
     return (
-        <footer className="bg-[#0f3061] text-white py-10 font-lato">
+        <footer className="bg-[#0f3061] text-white py-10 font-lato duration-500">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
@@ -25,7 +26,7 @@ const Footer = () => {
                                 karpage@gmail.com
                             </a>
                         </p>
-                        <p className="mb-2">{t("footer.first.phone")} +998 93 173 84 27</p>
+                        <p className="mb-2 hover:underline hover:cursor-pointer">{t("footer.first.phone")}: +998 93 173 84 27</p>
                         <p className="mb-2">{t("footer.first.place")}</p>
                     </div>
 
@@ -33,9 +34,9 @@ const Footer = () => {
                         <h2 className="text-xl font-bold mb-4">LINK</h2>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="hover:underline">
+                                <NavLink to={'/'} className="hover:underline">
                                 {t("footer.navs.main")}
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
@@ -44,23 +45,18 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                {t("footer.navs.maeket")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline">
                                 {t("footer.navs.tahlil")}
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <NavLink to={'/news'} className="hover:underline">
                                 {t("footer.navs.news")}
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <NavLink to={'/place'} className="hover:underline">
                                 {t("footer.navs.contact")}
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
